@@ -1,0 +1,358 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+	overflow-x: 0px;
+}
+
+a{
+	text-decoration:none;
+	color:#555;
+}
+
+ul{
+	list-style-type:none;
+}
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+.ceo img{
+    width:80px;
+}
+
+
+/* completeey unrelated but lets go */
+
+
+.bg-image{
+    background-image: url("../images/bgimg4.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:100%;
+    height:98vh;
+    padding:70px 0 120px 0; 
+    position:absolute;
+}
+
+header{
+    margin-top:-35px;
+    /* width:100%; */
+    align-items: center;
+    /* padding-left:90px;
+    padding-right:90px; */
+}
+
+/* .logo{
+    float:left;
+} */
+
+.hflex{
+    color:white;
+    width:80%;
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hflex2 {
+    width: 80%;
+    display: none;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links ul li a{
+    color: #C99043;
+}
+
+/* .container{
+   
+} */
+
+.links ul li{
+    font-family:poppins;
+    flex-basis: 100%;
+    display:inline;
+}
+
+.links ul li a{
+    margin-left:70px;
+    font-family:poppins;
+    font-size:16px;
+    font-weight:700;
+    color:#C99043;
+}
+
+
+/* card */
+
+.cardflex{
+    display:flex;
+    justify-content:space-around;
+    position:relative;
+    top:240px;
+    width:97%;
+    margin:auto;
+}
+
+.card{
+    background-color: white;
+    /* border-radius: 10px; */
+    box-shadow: 0 10px 19px 0 rgb(68 88 144 / 20%);
+    color: black;
+    width:30%;
+    padding: 10px;
+    margin-top:40px;
+}
+
+.cardtext{
+    color:white;
+}
+
+.cardtext h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.cardtext p{
+    font-size:20px;
+    font-weight:100;
+   line-height:2.4em;
+}
+
+.formcontrol{
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.card input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b4babc;
+    font-size: 14px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b4babc;
+    font-size: 14px;
+
+}
+
+button{
+    margin: 0 20px;
+    padding: 10px;
+    color: #C99043;
+    border: 1px solid #C99043;
+}
+
+/* House pictures */
+
+.housepictures{
+    text-align:center;
+    margin-top:300px;
+    margin-bottom:300px;
+}
+
+.housepicturesflex{
+    display:flex;
+    justify-content:space-around;
+    width:80%;
+    margin:auto;
+}
+
+.hpics img{
+    width:280px;
+    margin-left:10px;
+}
+
+
+
+/* footer  */
+
+footer{
+    background:#242C2E;
+    font-family: 'Poppins', sans-serif;
+    margin-top:200px;
+}
+
+.fflex{
+    display:flex;
+    justify-content:space-around;
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+.firstaxis{
+    color:#EBEBEB;
+}
+
+.firstaxis h3{
+    font-size:16px;
+}
+
+.firstaxis p {
+    font-size:13px;
+    line-height:2;
+    color:#BBBAB9;
+}
+
+.secondaxis{
+    color:#EBEBEB;
+}
+
+.secondaxis h3{
+    font-size:16px;
+}
+
+.secondaxis p {
+    font-size:12px;
+    line-height:2;
+    color:#BBBAB9;
+}
+
+.cccontainer{
+    text-align:center;
+    margin:auto;
+    padding-bottom:40px;
+}
+
+.copyright{
+    font-size:14px;
+    color:#BBBAB9;
+}
+
+.dm{
+    color:#E9E9E8;
+}
+
+/* fixed nav */
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #5D5B5B;
+    margin:auto;
+    color:#C99043;
+    z-index:2;
+}
+
+/*  Media query */
+
+@media (max-width: 500px){
+
+    .hflex{
+        color:white;
+        width:80%;
+        display: none;
+        margin:auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .hflex2 {
+        width: 80%;
+        display: flex;
+        margin: auto;
+        margin-right:50px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bg-image {
+        background-image: url(../images/bgimg4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 98vh;
+        padding: 70px 0 120px 0;
+        position: absolute;
+    }
+
+    /* contact us */
+
+    .cardflex {
+        display:block;
+        position: relative;
+        top: 240px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .card {
+        background-color: white;
+        /* border-radius: 10px; */
+        box-shadow: 0 10px 19px 0 rgb(68 88 144 / 20%);
+        color: black;
+        width: 100%;
+        padding: 10px;
+        margin:auto;
+        margin-top: 80px;
+    }
+
+    /* houses and footer */
+
+    .housepicturesflex{
+        display:block;
+    }
+    
+    .housepicturesflex {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .housepictures {
+        text-align: center;
+        margin-top: 310px;
+        margin-bottom:0;
+    }
+    
+    .hpics img {
+        width: 290px;
+        padding-right:10px;
+    
+    }
+    
+    .smallimg{
+        margin-right:6px;
+        margin-top:-10px;
+        padding-top:0px;
+    }
+    
+    
+        .fflex{
+            display:block;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    
+        .cccontainer {
+            text-align: left;
+            margin: none;
+            padding-bottom: 40px;
+            padding-left: 50px;
+            padding-right: 50px;
+            line-height:2.3em;
+            font-size:12px;
+        }
+    
+        .secondaxis h3{
+            margin-bottom:20px;
+            margin-top:20px;
+        }
+    
+        footer {
+            margin-top:80px;
+        }
+    
+}    

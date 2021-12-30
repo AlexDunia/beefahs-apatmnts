@@ -1,0 +1,653 @@
+*{
+	/* margin: 0;
+	padding:0; */
+	box-sizing:border-box;
+}
+
+a{
+	text-decoration:none;
+	color:#555;
+}
+
+ul{
+	list-style-type:none;
+}
+
+
+body{
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.popupbg{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 0, 0.75);
+  /* background: black; */
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  visibility: visible;
+  z-index: 10;
+
+
+    /* position:fixed; */
+    /* margin:center;
+    height:100%;
+    width:100%; */
+    /* width:100vw;
+    height:100vh;
+    background-color:black; */
+    /* display:flex;
+    justify-content:center;
+    align-items: center; */
+    /* z-index:2; */
+    /* background:black; */
+    /* display:grid;
+    place-items:center; */
+    /* transition:var(--transition); */
+}
+
+.form-popup{
+    position:absolute;
+    top:-150%;
+    left:50%;
+    opacity:0;
+    transform:translate(-50%, -50%) scale(1.25);
+    background:white;
+    width:300;
+    padding:40px 60px;
+    box-shadow:0px 5px 0px 0px rgba(0,0,0,0.1);
+    border-radius:10px;
+    transition:top 0ms ease-in-out 200ms,
+               opacity 200ms ease-in-out 0ms,
+               transform 20ms ease-in-out 0ms,
+}
+
+.form-popup h1{
+    color: #C58630;
+    margin-bottom:200px;
+}
+
+.form-popup.active{
+    /* width: 100%;
+    height: 100%; */
+    z-index:100;
+    top:50%;
+    opacity:1;
+    display:block;
+    position: fixed;
+   
+    cursor: pointer;
+    transform:translate(-50%, -50%) scale(1);
+    transition:top 0ms ease-in-out 200ms,
+               opacity 200ms ease-in-out 0ms,
+               transform 20ms ease-in-out 0ms,
+               
+}
+
+.form-popup .form .formcontrol{
+    margin:15px 0px;
+}
+
+
+.form-popup .form .formcontrol input{
+    margin-top:5px;
+    margin-bottom:35px;
+    display:block;
+    width:100%;
+    padding:10px;
+    outline:none;
+    border:1px solid #aaa;
+    /* border-radius:5px; */
+}
+
+.form-popup .form .formcontrol label{
+    font-style:italic;
+    font-weight:200;
+}
+
+
+.hex img{
+    position:absolute;
+    top:20px;
+    right:40px;
+    text-align:center;
+    line-height:15px;
+    cursor:pointer; 
+}
+
+
+
+header{
+    background:#5D5B5B;
+    /* width:100%; */
+    align-items: center;
+    /* padding-left:90px;
+    padding-right:90px; */
+}
+
+/* .logo{
+    float:left;
+} */
+
+
+.hflex{
+    color:white;
+    width:80%;
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hflex2 {
+    width: 80%;
+    display: none;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links ul li a{
+    color: #C99043;
+}
+
+/* .container{
+   
+} */
+
+.links ul li{
+    flex-basis: 100%;
+    font-size:16px;
+    font-weight:700;
+    color:#C99043;
+    display:inline;
+    margin-left:70px;
+}
+
+/* fixed nav */
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #5D5B5B;
+    margin:auto;
+    color:#C99043;
+    z-index:2;
+}
+
+#menuItemm{
+	height:0px;
+	width:0px;
+	visibility:hidden;
+}
+
+.socialicon{
+    display:flex;
+}
+
+/* navigate */
+
+.navigate{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:130px;
+}
+
+/* Pickhouse  */
+
+.showcase{
+    display:flex;
+    justify-content:space-between;
+    width:67%;
+    margin:auto;
+    margin-top:190px;
+}
+
+.option{
+    display:flex;
+    justify-content:space-between;
+    width:50%;
+}
+
+
+.smallimg:hover{
+    cursor:pointer;
+    border: 2px solid #C58630;
+}
+
+/* end of pick house */
+
+.maintext{
+    margin-top:50px;
+}
+
+.maintext h2{
+    color:#C58630;
+    line-height:1.3em;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.small{
+    font-weight:200;
+}
+
+.smallimg{
+    padding-top:10px;
+}
+
+.line{
+    width: 280px;
+    height: 1px;
+    background-color:black;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 0px;  
+}
+
+.mainp img{
+    margin:0;
+    padding:0;
+}
+.maintext h4{
+    font-weight:570;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.maintext p{
+    font-size:19px;
+    margin-bottom:12px;
+}
+
+.btn{
+    /* background: rgb(29, 158, 29); */
+    border: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 7px 10px;
+    margin-top: 30px;
+    z-index:1;
+    animation: pulse 1500ms infinite;
+    /* margin: 30px 20px 20px 0;   */
+}
+
+.btn:hover{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.25s;
+    background:#C58630;
+    border: 3px solid white;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1)
+    }
+
+    100%{
+        transform: scale(1.25)
+    }
+}
+
+
+
+
+/* House pictures */
+
+.housepictures{
+    text-align:center;
+    margin-top:300px;
+    margin-bottom:300px;
+}
+
+.housepicturesflex{
+    display:flex;
+    justify-content:space-around;
+    width:80%;
+    margin:auto;
+}
+
+.hpics img{
+    width:280px;
+    margin-left:10px;
+}
+
+
+/* footer  */
+
+footer{
+    background:#242C2E;
+    font-family: 'Poppins', sans-serif;
+    margin-top:200px;
+}
+
+.fflex{
+    display:flex;
+    justify-content:space-around;
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+.firstaxis{
+    color:#EBEBEB;
+}
+
+.firstaxis h3{
+    font-size:16px;
+}
+
+.firstaxis p {
+    font-size:13px;
+    line-height:2;
+    color:#BBBAB9;
+}
+
+.secondaxis{
+    color:#EBEBEB;
+}
+
+.secondaxis h3{
+    font-size:16px;
+}
+
+.secondaxis p {
+    font-size:12px;
+    line-height:2;
+    color:#BBBAB9;
+}
+
+.cccontainer{
+    text-align:center;
+    margin:auto;
+    padding-bottom:40px;
+}
+
+.copyright{
+    font-size:14px;
+    color:#BBBAB9;
+}
+
+.dm{
+    color:#E9E9E8;
+}
+
+
+
+/* fixed nav */
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #5D5B5B;;
+    z-index: 2;
+    margin:auto;
+}
+
+#menuItemm{
+	height:0px;
+	width:0px;
+	visibility:hidden;
+}
+
+.socialicon{
+    display:flex;
+}
+
+/*  Media query */
+
+@media (max-width: 1024px){
+
+    #menuItemm{
+        background-color: #5D5B5B;
+        width:210px;
+        height:240px;
+        z-index:3;
+        cursor:pointer;
+        position:fixed;
+        top:6%;
+        left: 155px;
+        cursor:pointer;
+        visibility:hidden;
+        
+    }
+
+    #menuItemm li a {
+        display: block;
+        position: relative;
+        color: #fff;
+        top:-35px;
+        margin-bottom:20px;
+        font-family:poppins;
+        /* padding: 10px 20px; */
+        font-weight: 500;
+    }
+
+    .menulist{
+        margin-top:32px;
+    }
+
+    .icon {
+        position: absolute;
+        top: 18px;
+        left: 170px;
+        width: 1.7em;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 200;
+        color: white;
+        z-index: 4;
+    }
+
+    
+.navigate{
+    display:block;
+    width:70%;
+    margin-bottom:80px;
+}
+
+.navigatetext{
+    margin-top:30px;
+}
+
+    .showcase{
+        display:block;
+    }
+    
+} 
+
+@media (max-width: 1024px){
+
+.hflex{
+    color:white;
+    width:80%;
+    display: none;
+    margin:auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hflex2 {
+    width: 80%;
+    padding-right: 23px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+    #mainpicture{
+        width:100%;
+    }
+
+    .small{
+        width:50px;
+        margin-top:30px;
+    }
+
+    .propertiesshowcase{
+        margin:none;
+    }
+
+    .headericon{
+background: #5D5B5B;
+    /* width: 100%; */
+    z-index: 1;
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-right: 20px;
+    }
+
+    .housepicturesflex{
+        display:block;
+    }
+
+    .housepicturesflex {
+        width: 100%;
+        margin: auto;
+    }
+
+    .housepictures {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom:0;
+    }
+
+    .hpics img {
+        width: 290px;
+        padding-right:10px;
+
+    }
+
+    .fflex{
+        display:block;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .cccontainer {
+        text-align: left;
+        margin: none;
+        padding-bottom: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height:2.3em;
+        font-size:12px;
+    }
+
+    .secondaxis h3{
+        margin-bottom:20px;
+        margin-top:20px;
+    }
+
+    footer {
+        margin-top:80px;
+    }
+
+}
+
+
+
+@media (max-width: 320px){
+
+    #menuItemm {
+        background-color: #5D5B5B;
+        width: 210px;
+        height: 240px;
+        z-index: 3;
+        cursor: pointer;
+        position: fixed;
+        top: 6%;
+        left: 100px;
+        cursor: pointer;
+        visibility: hidden;
+    }
+   
+    #mainpicture{
+        width:100%;
+    }
+
+    #menuItemm {
+        background-color: #5D5B5B;
+        width: 210px;
+        height: 240px;
+        z-index: 3;
+        cursor: pointer;
+        position: fixed;
+        top: 6%;
+        left: 100px;
+        cursor: pointer;
+        visibility: hidden;
+    }
+
+    .small{
+        width:40px;
+        margin-top:30px;
+    }
+
+    .line {
+        width: 200px;
+        height: 1px;
+        background-color: black;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+
+}
+
+
+@media (max-width: 320px){
+
+.form-popup.active{
+   
+    width:80%;
+    height:70%;
+    padding:40px 40px;
+    left:45%;
+    
+}
+
+.form-popup .form .formcontrol {
+    margin: 5px 0px;
+}
+
+.form-popup h1 {
+    color: #C58630;
+    font-size:20px;
+    margin-bottom: 20px;
+}
+
+.form-popup .form .formcontrol label{
+    font-size:10px;
+    font-style:italic;
+    font-weight:200;
+}
+
+}
